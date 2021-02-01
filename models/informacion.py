@@ -7,7 +7,7 @@ class informacion(models.Model):
      _name = 'odoo_basico.informacion' # Será o nome da táboa
      _description = ' Tipos de datos básicos'
 
-     name = fields.Char(string="Titulo",required=True,size=20)
+     name = fields.Char(string="Titulos",required=True,size=20)
      descripcion = fields.Text(string="A Descripción")
      autorizado = fields.Boolean(string="¿Está Autorizado?",default=True)
      sexo_traducido = fields.Selection([('Hombre','Home'),('Mujer','Muller'),('Otros','Outros')],string="Sexo")
